@@ -20,6 +20,10 @@ class PythonOrgSearch(unittest.TestCase):
         password.send_keys("05217416aa")
         btn = driver.find_element(By.XPATH, "//*[@id=\"loginbutton\"]")
         btn.click()
+        mtn = driver.find_element(By.XPATH, "//*[@id=\"loginform\"]/div[2]/div[2]")
+        mtn.click()
+        stn = driver.find_element(By.XPATH, "//*[@id=\"login_link\"]/div/a")
+        stn.click()
 
 
     def tearDown(self):
